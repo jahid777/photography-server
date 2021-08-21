@@ -67,7 +67,6 @@ client.connect((err) => {
   });
 
   //for delete
-  //delete korer jonno registerList theke
   app.delete("/delete/:id", (req, res) => {
     orderCollection
       .deleteOne({ _id: ObjectId(req.params.id) })
